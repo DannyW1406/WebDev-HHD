@@ -7,6 +7,11 @@
             body {
         		background-image: url("../media/TyreOnFire.jpeg"); 
         		background-size: cover;
+                /* keeps the image centered on all screens */
+                background-position: center; 
+                background-repeat: no-repeat;
+                margin: 0;
+                font-family: Arial, sans-serif;
         	} 
         </style>
         <!-- Linking the external CSS stylesheet to the about page of the website -->
@@ -14,6 +19,8 @@
         <link rel="stylesheet" href="../CSS/StyleSheet.css">
         <title>Wheels on Fire About Page</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     </head>
     <body>
         
@@ -38,23 +45,28 @@
         <!-- Image and description of the team -->
 
             <h2>Our Team</h2>
+            <div class="car-images">
             <img src="../media/team1.jpg" alt="Car dealership Team" width="400" height="300">
             <p><b>Our team is committed to providing the best service possible.</b></p>
-    
+            </div>
         <!--Drop down that shows more information about the team members -->
             <details>
+                <div class = text-background>
                 <summary><h2>Click <u>Here</u> to meet our team members</h2></summary>
                 <p><b>John O'Reilley</b> - Founder and CEO. With over 20 years of experience in the automotive industry, John is passionate about cars and providing exceptional customer service.</p>
                 <p><b>Jane Smith</b> - Sales Manager. Jane has a keen eye for detail and is dedicated to helping customers find the perfect vehicle for their needs.</p>
                 <p><b>Mike Johnson</b> - Lead Mechanic. Mike is a certified mechanic with over 15 years of experience in vehicle maintenance and repair.</p>
                 <p><b>Emily Davis</b> - Customer Service Representative. Emily is committed to ensuring that every customer has a positive experience at Wheels on Fire.</p>
+                </div>
             </details>
         <!--Drop down that shows the history of the company-->
             <details>
     
                 <summary><h2>Click <u>Here</u> to learn about our company history</h2></summary>
+                <div class = text-background>
                 <p><li><b>Wheels on Fire was founded in 2005 with the goal of providing high-quality vehicles and exceptional customer service. Over the years, we have grown to become one of the leading car dealerships in the region, thanks to our commitment to excellence and our passion for cars.</b></li></p>
                 <p><li><b>We have a rich history of serving our community and building long-lasting relationships with our customers. We are proud of our journey and look forward to continuing to provide top-notch vehicles and services for many years to come.</b></li></p>
+                </div>
             </details>
         </div>
     </body>

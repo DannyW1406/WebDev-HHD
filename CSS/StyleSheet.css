@@ -3,13 +3,17 @@ body {
 	font: Arial;
 	color: #d6cfcf;
 	text-align: center;
+  margin: 0;
+  padding: 0;
 }
 .text-background {
     background: #333333b8;
     padding: 1em 2em;
-    border-radius: 12px;
+    border-radius: 10px;
     display: inline-block;
     font-weight: bold;
+    margin: 40px auto;
+    max-width: 900px;
 }
 
 /* Headings styling */
@@ -39,6 +43,8 @@ details img {
   display: flex;
   justify-content: space-between;
   align-items: center; 
+  display: flex;
+  flex-wrap: wrap;
 }
 /* Navbar Left */
 .navbar .nav-left {
@@ -57,6 +63,7 @@ details img {
   padding: 20px 1px;
   text-decoration: none;
   font-weight: bold;
+  margin: 5px 10px;
 }
 /* Navbar Right */
 .navbar .nav-right {
@@ -78,4 +85,58 @@ details img {
   display: flex;
   align-items: center;
   font-size: larger;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+.car-images {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+}
+
+@media (max-width: 768px){
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2{
+    font-size: 1.3rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-background {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .navbar {
+    align-items: center;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  h2, h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
