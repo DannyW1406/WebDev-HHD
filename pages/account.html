@@ -5,17 +5,21 @@
         <!-- Adding the background image to the main page of the website -->
         <style>
         	body {
-        		background-image: url("media/TyreOnFire.jpeg"); 
+        		background-image: url("../media/TyreOnFire.jpeg"); 
         		background-size: cover;
                 /* keeps the image centered on all screens */
                 background-position: center; 
                 background-repeat: no-repeat;
                 margin: 0;
                 font-family: Arial, sans-serif;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+
         	}
         </style>
         <!-- Linking the external CSS stylesheet to the main page of the website -->
-        <link rel="stylesheet" href="CSS/StyleSheet.css">
+        <link rel="stylesheet" href="../CSS/StyleSheet.css">
         <!-- Title for the website -->
         <title>Wheels on Fire Home Page</title>
         <meta charset="UTF-8">
@@ -26,7 +30,7 @@
         <!-- Navigation bar to navigate between the different pages of the website -->
         <nav class="navbar">
             <div class="nav-left">
-                <a href="index.html">Wheels on Fire</a>
+                <a href="../index.html">Wheels on Fire</a>
             </div>
             <div class="nav-right">  
                 <a href="pages/about.html">About</a>
@@ -50,10 +54,6 @@
 
         <input type="password" id="password" name="password" placeholder="Enter your password" required>
         </div>
-
-        <input type="submit" value="Sign In">
-    </form>
-            </div>
         
 </div>
             <input type="submit" value="Sign In">
