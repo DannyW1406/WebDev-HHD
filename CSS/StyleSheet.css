@@ -43,7 +43,6 @@ details img {
   display: flex;
   justify-content: space-between;
   align-items: center; 
-  display: flex;
   flex-wrap: wrap;
 }
 /* Navbar Left */
