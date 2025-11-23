@@ -148,7 +148,7 @@ input {
 
 
 .form-container {
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(0, 0, 0, 0.9);
             padding: 20px;
             border-radius: 8px;
             margin-top: 50px;
@@ -179,7 +179,7 @@ input[type="email"], input[type="password"] {
         input[type="submit"] {
             width: 100%;
             padding: 10px;
-            background-color: #cbced1;
+            background-color: #000000;
             color: #000000;
             border: none;
             border-radius: 4px;
