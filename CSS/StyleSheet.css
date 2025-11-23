@@ -139,51 +139,67 @@ gap: 10px;
     text-align: center;
   }
 }
+            .form-container {
+                margin: 60px auto;       
+                width: 360px;         
+                background: rgba(76, 75, 75, 0.878);
+                padding: 20px;
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;    
+                gap: 12px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            }
 
-.form-container {
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 20px;
-  border-radius: 8px;
-  margin-top: 50px;
-  width: 280px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  text-align: center;
-}
-.form-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color:#ffffff;
-}
-.form-group {
-  margin-bottom: 15px;
+            .form-container h2 {
+                margin: 0 0 8px 0;
+                text-align: center;
+            }
+
+            .form-group {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;   
+            }
+
+            .form-group label {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 6px;
+            }
+
+
+
+            .form-group input[type="email"],
+            .form-group input[type="password"] {
+                width: 85%;
+                max-width: 300px;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            .form-container input[type="submit"] {
+                padding: 10px 18px;
+                border: none;
+                border-radius: 6px;
+                background: #333;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            /* add gap between form controls */
+.form-container form {
+    display: flex;              /* already set inline in your HTML, safe to repeat */
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;                  /* <-- space between inputs and the submit button */
 }
 
-label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color:#ffffff;  
-}
-
-input[type="email"], input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #000000;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-        input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            background-color: #000000;
-            color: #ffffff;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-            margin: 5px;
-            width:320px;
-        }
+/* alternatively, give the submit its own top margin */
+/* .form-container input[type="submit"] { margin-top: 16px; } */
 
 input[type="submit"]:hover {
             background-color: #5c9ded;
