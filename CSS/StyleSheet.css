@@ -1,10 +1,16 @@
 /* Basic body styling */
 body {
-	font: Arial;
-	color: #d6cfcf;
-	text-align: center;
+  font: Arial;
+  color: #d6cfcf;
+  text-align: center;
   margin: 0;
   padding: 0;
+  background-image: url("../media/TyreOnFire.jpeg");
+  background-size: cover;         
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;              
+  background-attachment: fixed;
 }
 .text-background {
   background: #333333b8;
