@@ -209,3 +209,9 @@ input[type="submit"]:hover {
   background-color: #5c9ded;
 }
 
+.form {
+  width:100%; 
+  display:flex; 
+  flex-direction:column; 
+  align-items:center;
+}
