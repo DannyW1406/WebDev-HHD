@@ -116,7 +116,7 @@ img{
 
 @media (max-width: 480px) {
   .text-background {
-    width: 90%;
+    width: 100%;
     padding: 15px;
   }
 
