@@ -40,8 +40,13 @@
             <h3> Please enter your contact information below:</h3>
             
             <!-- adding a text box for the user to enter their name -->
-            <label for = "name"><b>Name:<b></label>
-            <div class="center-text"></div><input type="text" id="name" name="name" required>
+            <label for = "First name"><b> First Name:<b></label>
+            <div class="center-text"></div><input type="text" id="First name" name=" First name" required>
+            <br>
+
+            <br>
+            <label for = "Last name"><b> Last Name:<b></label>
+            <div class="center-text"></div><input type="text" id="Last name" name="Last name" required>
             <br>
 
             <br>
@@ -56,6 +61,26 @@
             <div class="center-text"></div><input type="text" id="email"name= "email" required>
             <br>
 
+            br>
+            <!-- Reason for Inquiry -->
+            <label for="inquiryReason"><b>Reason for Inquiry:</b></label>
+            <div class ="center text"> </div><input type="text" id="inquiryReason" name="inquiryReason" list="reasons" required>
+
+            <datalist id="reasons">
+            <option value="General Question">
+            <option value="Schedule a Test Drive">
+            <option value="Request a Quote">
+            <option value="Feedback">
+            <option value="Other">
+            </datalist>
+            <br>
+
+            <!-- adding a larger text box for the user to enter their message -->
+            <br>
+            <label for="message"><b>Your Message:</b></label>
+            <div class="center-text"></div><textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            <br>
+
             <br>
             <!-- adding a 'submit' button that does nothing for now (just for looks) -->
             <button type="submit">submit</button>
@@ -68,3 +93,4 @@
 
 
 </html>
+
