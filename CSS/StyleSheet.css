@@ -99,7 +99,7 @@ img{
 }
 
 .car-images {
-  display: flex;
+  display: center;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
