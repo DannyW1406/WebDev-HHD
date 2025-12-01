@@ -40,58 +40,72 @@
             <h3> Please enter your contact information below:</h3>
             
             <!-- adding a text box for the user to enter their name -->
-            <label for = "firstname"><b> First Name:<b></label>
-            <div class="center-text"></div><input type="text" id="First name" name=" First name" required>
-            <br>
+            <form id="contactForm" novalidate>
+            
+    <div class="form-group">
+        <label for="firstName"><b>First Name:</b></label>
+        <input type="text" id="firstName" name="firstName" pattern="[A-Za-z]+" required>
+        <small id="firstNameError" class="error-message" aria-live="polite"></small>
+    </div>
 
-            <br>
-            <label for = "lastname"><b> Last Name:<b></label>
-            <div class="center-text"></div><input type="text" id="Last name" name="Last name" required>
-            <br>
+    <br>
 
-            <br>
-            <!-- adding a text box for the user to enter their phone number -->
-            <label for = "phoneNumber"><b>Phone number:</b></label>
-            <div class="center-text"></div><input type="tel" id ="phoneNumber" name ="phoneNumber" pattern="[0-9]{10}" required>
-            <br>
+    <div class="form-group">
+        <label for="lastName"><b>Last Name:</b></label>
+        <input type="text" id="lastName" name="lastName" pattern="[A-Za-z]+" required>
+        <small id="lastNameError" class="error-message" aria-live="polite"></small>
+    </div>
 
-            <br>
-            <!-- adding a text box for the user to enter their email address -->
-            <label for = "email"><b>Email:</b></label>
-            <div class="center-text"></div><input type="text" id="email"name= "email" required>
-            <br>
+    <br>
 
-            <br>
-            <!-- Reason for Inquiry -->
-            <label for="inquiryReason"><b>Reason for Inquiry:</b></label>
-            <div class ="center text"> </div><input type="text" id="inquiryReason" name="inquiryReason" list="reasons" required>
+    <div class="form-group">
+        <label for="phoneNumber"><b>Phone Number:</b></label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" required>
+        <small id="phoneError" class="error-message" aria-live="polite">Format: 10 digits</small>
+    </div>
 
-            <datalist id="reasons">
+    <br>
+
+    <div class="form-group">
+        <label for="email"><b>Email:</b></label>
+        <input type="email" id="email" name="email" required>
+        <small id="emailError" class="error-message" aria-live="polite"></small>
+    </div>
+
+    <br>
+
+    <div class="form-group">
+        <label for="inquiryReason"><b>Reason for Inquiry:</b></label>
+        <input type="text" id="inquiryReason" list="reasons" name="inquiryReason" required>
+        <datalist id="reasons">
             <option value="General Question">
             <option value="Schedule a Test Drive">
             <option value="Request a Quote">
             <option value="Feedback">
             <option value="Other">
-            </datalist>
-            <br>
+        </datalist>
+        <small id="reasonError" class="error-message" aria-live="polite"></small>
+    </div>
 
-            <!-- adding a larger text box for the user to enter their message -->
-            <br>
-            <label for="message"><b>Your Message:</b></label>
-            <div class="center-text"></div><textarea id="message" name="message" rows="4" cols="50" required></textarea>
-            <br>
+    <br>
 
-            <br>
-            <!-- adding a 'submit' button that does nothing for now (just for looks) -->
-            <button type="submit">submit</button>
-            
-            </form>
+    <div class="form-group">
+        <label for="message"><b>Your Message:</b></label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <small id="messageError" class="error-message" aria-live="polite"></small>
+    </div>
+
+    <br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<script src="../JS/contact.js"></script>
 
         </div>
     </body>
-    
 
 
-</html>
 
 
