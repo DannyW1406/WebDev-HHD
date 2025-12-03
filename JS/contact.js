@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", function (e) {
         let valid = true;
 
-        // Helper functions
         function setError(id, message) {
             const errorElement = document.getElementById(id);
             errorElement.textContent = message;
@@ -20,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             errorElement.style.display = "none";
         }
 
-        // ---- First Name ----
+        //first name
         const firstName = document.getElementById("firstName");
         if (!/^[A-Za-z]+$/.test(firstName.value)) {
             setError("firstNameError", "First name must contain letters only.");
@@ -30,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
             firstName.classList.remove("error");
         }
 
-        // ---- Last Name ----
+        //last name
         const lastName = document.getElementById("lastName");
         if (!/^[A-Za-z]+$/.test(lastName.value)) {
             setError("lastNameError", "Last name must contain letters only.");
@@ -40,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
             lastName.classList.remove("error");
         }
 
-        // ---- Phone Number ----
+        //phone number
         const phone = document.getElementById("phoneNumber");
         if (!/^[0-9]{10}$/.test(phone.value)) {
             setError("phoneError", "Phone number must be exactly 10 digits.");
@@ -50,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
             phone.classList.remove("error");
         }
 
-        // ---- Email ----
+        //email
         const email = document.getElementById("email");
         if (!email.value.includes("@") || !email.value.includes(".")) {
             setError("emailError", "Please enter a valid email address.");
@@ -60,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
             email.classList.remove("error");
         }
 
-        // ---- Reason for Inquiry ----
+        //reason for enquiry
         const reason = document.getElementById("inquiryReason");
         if (reason.value.trim() === "") {
             setError("reasonError", "Please choose or type a reason.");
@@ -70,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
             reason.classList.remove("error");
         }
 
-        // ---- Message ----
+        //user message
         const message = document.getElementById("message");
         if (message.value.trim() === "") {
             setError("messageError", "Message cannot be empty.");
@@ -80,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
             message.classList.remove("error");
         }
 
-        // Prevent form submission if invalid
+        //prevent submission if info invalid
         if (!valid) {
             e.preventDefault();
         }
